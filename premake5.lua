@@ -8,3 +8,8 @@ workspace "Hedean"
 
         location "build/"
         files { "src/**.cpp", "src/**.hpp" }
+
+        includedirs {"vendor/raylib/src" }
+
+        libdirs { "vendor/raylib/src" }
+        links { "raylib","gdi32", "winmm" }

@@ -1,5 +1,15 @@
-#include <iostream>
+#include "application.hpp"
 
 int main() {
-    std::cout << "Hello world!";
+    ApplicationSpecification specification;
+
+    specification.windowSize = { 700, 400};
+    specification.name = "Hedean";
+    specification.windowIcon = { 0 };
+
+    Application application(specification);
+
+    application.Run();
+
+    return 0;
 }
